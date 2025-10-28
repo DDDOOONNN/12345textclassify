@@ -279,8 +279,8 @@ def print_detailed_metrics(val_true, val_preds, label_encoder, logger, output_di
 def main():
     # ==================== 配置参数 ====================
     MODEL_NAME = 'hfl/chinese-roberta-wwm-ext'
-    DATA_PATH = '/data/gtm/textclassify/datasets/traindatasets100up.csv'
-    OUTPUT_DIR = '/data/gtm/textclassify/models4/roberta_classifier'
+    DATA_PATH = '/data/gtm/textclassify/datasets/forth_summary_keyword/forth_summary_keyword_processed.csv'
+    OUTPUT_DIR = '/data/gtm/textclassify/models42/roberta_classifier'
     MAX_LENGTH = 128
     
     # 🔥 优化后的配置
@@ -581,3 +581,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# nohup python your_script.py > training.log 2>&1 &
