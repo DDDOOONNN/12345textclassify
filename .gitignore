@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 日志文件
+*.log
+
+# 训练产物和报告
+classification_report.txt
+confusion_matrix.npy
+detailed_metrics.json
+training_history.json
+token_length_stats.txt
+
+# 模型权重和序列化对象
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.pkl
+*.joblib
+label_encoder.json
+
+# 训练检查点目录
+models*/**/checkpoint-*/
+
+# 大型数据集（如果它们是原始数据，可以考虑用 Git LFS；如果是中间产物，就忽略）
+# traindatasets100up.csv
+# summary_label_cleaned.csv
+
+# 忽略整个模型输出目录，如果里面的所有东西都是生成的
+# 这样更简单，但要确保里面没有你需要版本控制的文件
+# models/
+# models1/
+# models3/
+# models4/
